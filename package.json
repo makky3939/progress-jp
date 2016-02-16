@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/makky3939/tomato-timer/issues"
   },
-  "homepage": "https://github.com/makky3939/tomato-timer#readme"
+  "homepage": "https://github.com/makky3939/tomato-timer#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1"
+  }
 }
