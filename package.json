@@ -4,7 +4,9 @@
   "description": "tomato-timer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "build": "gulp --gulpfile gulpfile/index.coffee build",
+    "develop": "gulp --gulpfile gulpfile/index.coffee develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,26 @@
   "bugs": {
     "url": "https://github.com/makky3939/tomato-timer/issues"
   },
-  "homepage": "https://github.com/makky3939/tomato-timer#readme"
+  "homepage": "https://github.com/makky3939/tomato-timer#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^1.5.2",
+    "licensify": "^2.2.0",
+    "reactify": "^1.1.1",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.5.2",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0"
+  }
 }
