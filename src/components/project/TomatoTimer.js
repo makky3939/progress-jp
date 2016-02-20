@@ -1,6 +1,6 @@
 var React = require('react')
 
-var Timer = React.createClass({
+var TomatoTimer = React.createClass({
   getInitialState: function() {
     return {
       time: 0
@@ -36,7 +36,7 @@ var Timer = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Timer</h1>
+        <h1>TomatoTimer</h1>
         <div>{this.state.time}</div>
         <form onSubmit={this.handleSubmit}>
           <button>start</button>
@@ -46,4 +46,4 @@ var Timer = React.createClass({
   }
 });
 
-module.exports = Timer
+module.exports = TomatoTimer

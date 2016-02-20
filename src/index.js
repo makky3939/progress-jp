@@ -11,7 +11,7 @@ var hashHistory = reactRouter.hashHistory
 var Layout = require('./components/layout/Default.js')
 //
 // Project components
-var Timer = require('./components/project/Timer.js')
+var TomatoTimer = require('./components/project/TomatoTimer.js')
 var About = require('./components/project/About.js')
 var TheBank = require('./components/project/TheBank.js')
 
@@ -24,10 +24,10 @@ onUpdateHandler()
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="" component={Layout}>
-      <Route path="/timer" component={Timer} />
+      <Route path="/tomato-timer" component={TomatoTimer} />
       <Route path="/the-bank" component={TheBank} />
       <Route path="/about" component={About} />
     </Route>
-    <Redirect from="/" to="/about" />
+    <Redirect from="/" to="/tomato-timer" />
   </Router>
 ), document.getElementById('react-root'))
