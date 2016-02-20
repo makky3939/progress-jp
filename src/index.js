@@ -13,7 +13,7 @@ var Layout = require('./components/layout/Default.js')
 // Project components
 var Timer = require('./components/project/Timer.js')
 var About = require('./components/project/About.js')
-// var Browse = require('./components/project/Browse.js')
+var TheBank = require('./components/project/TheBank.js')
 
 function onUpdateHandler() {
   window.scrollTo(0, 0)
@@ -25,6 +25,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="" component={Layout}>
       <Route path="/timer" component={Timer} />
+      <Route path="/the-bank" component={TheBank} />
       <Route path="/about" component={About} />
     </Route>
     <Redirect from="/" to="/about" />
