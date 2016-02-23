@@ -25,7 +25,7 @@ var TomatoTimer = React.createClass({
 
   handleSubmit: function(e) {
     e.preventDefault();
-    this.setState({time: 10});
+    this.setState({time: 60 * 25});
     this.interval = setInterval(this.tick, 1000);
   },
 

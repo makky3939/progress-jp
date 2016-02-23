@@ -1,7 +1,7 @@
 {
-  "name": "tomato-timer",
+  "name": "progress-jp",
   "version": "0.0.0",
-  "description": "tomato-timer",
+  "description": "progress-jp",
   "main": "index.js",
   "scripts": {
     "build": "gulp --gulpfile gulpfile/index.coffee build",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makky3939/tomato-timer.git"
+    "url": "git+https://github.com/makky3939/progress-jp.git"
   },
   "author": "makky3939",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/makky3939/tomato-timer/issues"
+    "url": "https://github.com/makky3939/progress-jp/issues"
   },
-  "homepage": "https://github.com/makky3939/tomato-timer#readme",
+  "homepage": "https://github.com/makky3939/progress-jp#readme",
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
