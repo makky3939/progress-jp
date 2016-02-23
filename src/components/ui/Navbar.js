@@ -14,6 +14,9 @@ var Navbar = React.createClass({
     return (
       <ul>
         <li>
+          <span>progress-jp</span>
+        </li>
+        <li>
           <Link to='/tomato-timer'>tomato timer</Link>
         </li>
         <li>
