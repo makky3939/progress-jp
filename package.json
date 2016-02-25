@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp --gulpfile gulpfile/index.coffee build",
     "develop": "gulp --gulpfile gulpfile/index.coffee develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp --gulpfile gulpfile/index.coffee build"
   },
   "repository": {
     "type": "git",
