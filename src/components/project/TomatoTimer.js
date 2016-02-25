@@ -35,11 +35,12 @@ var TomatoTimer = React.createClass({
 
   render: function() {
     return (
-      <div>
+      <div className='container'>
         <h1>TomatoTimer</h1>
+        <hr />
         <div>{this.state.time}</div>
         <form onSubmit={this.handleSubmit}>
-          <button>start</button>
+          <button className='btn btn-success-outline'>start</button>
         </form>
       </div>
     )

@@ -10,7 +10,10 @@ var About = React.createClass({
 
   render: function() {
     return (
-      <h1>About</h1>
+      <div className='container'>
+        <h1>About</h1>
+        <hr />
+      </div>
     )
   }
 });
