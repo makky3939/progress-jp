@@ -13,8 +13,8 @@ var Footer = React.createClass({
   render: function() {
     return (
       <footer>
-        <hr />
         <div className='container'>
+          <hr />
           <p>&copy; progress-jp</p>
         </div>
       </footer>
