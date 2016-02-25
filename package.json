@@ -4,9 +4,10 @@
   "description": "progress-jp",
   "main": "index.js",
   "scripts": {
+    "postinstall": "bundle install",
     "build": "gulp --gulpfile gulpfile/index.coffee build",
     "develop": "gulp --gulpfile gulpfile/index.coffee develop",
-    "test": "gulp --gulpfile gulpfile/index.coffee build"
+    "test": "gulp --gulpfile gulpfile/index.coffee test"
   },
   "repository": {
     "type": "git",

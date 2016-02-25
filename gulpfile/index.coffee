@@ -16,3 +16,6 @@ gulp.task 'watch', ->
 
 gulp.task 'develop', ->
   runSequence 'build', 'connect', 'watch'
+
+gulp.task 'test', ->
+  runSequence 'build'
