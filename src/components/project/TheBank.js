@@ -24,7 +24,9 @@ var TheBank = React.createClass({
       <div className='container'>
         <h1>TheBank</h1>
         <hr />
-        <p>{(this.state.time / 1000) | 0}</p>
+        <section>
+          <h1 className='display-1 text-xs-center'>{(this.state.time / 1000) | 0}</h1>
+        </section>
       </div>
     )
   },
