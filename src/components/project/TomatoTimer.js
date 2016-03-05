@@ -27,6 +27,13 @@ var TomatoTimer = React.createClass({
     e.preventDefault();
     this.setState({time: 60 * 25});
     this.interval = setInterval(this.tick, 1000);
+    var myWorker = new Worker("/assets/worker.js");
+    myWorker.postMessage(123);
+
+    myWorker.onmessage = function(e) {
+      console.log('Message received from worker');
+      console.log(e);
+    }
   },
 
   componentWillUnmount: function() {
@@ -40,7 +47,7 @@ var TomatoTimer = React.createClass({
         <hr />
         <div>{this.state.time}</div>
         <form onSubmit={this.handleSubmit}>
-          <button className='btn btn-success-outline'>start</button>
+          <button className='btn btn-danger-outline'>start</button>
         </form>
       </div>
     )
