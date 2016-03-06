@@ -36,6 +36,7 @@
     "run-sequence": "^1.1.5"
   },
   "dependencies": {
+    "babelify": "^7.2.0",
     "bootstrap": "^4.0.0-alpha.2",
     "font-awesome": "^4.5.0",
     "gulp-eslint": "^2.0.0",
