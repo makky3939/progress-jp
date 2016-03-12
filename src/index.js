@@ -3,6 +3,23 @@ import React from 'react'
 import {render} from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
+
+const router = (
+  <Router history={browserHistory}>
+
+  </Router>
+)
+
+// <Route path='/' component={layout_default}>
+//   <IndexRoute component={project_top}/>
+//   <Route path='analysis' component={project_analysis_index}>
+//     <Route path='detailed' component={project_analysis_detailed} />
+//     <Route path='comparison' component={project_analysis_comparison} />
+//   </Route>
+//   <Route path='Simulation' component={project_simulation_index} />
+//   <Route path='*' component={project_notfound} />
+
+render(router, document.getElementById('react-root'))
 // var React = require('react')
 // var ReactDOM = require('react-dom')
 // var reactRouter = require('react-router')
