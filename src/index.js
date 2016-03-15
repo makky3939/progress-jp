@@ -3,10 +3,13 @@ import React from 'react'
 import {render} from 'react-dom'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
+// Components
+import layout_default from './components/layout/default/index.js'
 
 const router = (
   <Router history={browserHistory}>
-
+    <Route path='/' component={layout_default}>
+    </Route>
   </Router>
 )
 
