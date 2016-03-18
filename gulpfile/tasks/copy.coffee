@@ -18,5 +18,9 @@ gulp.task 'copy:image', ->
   gulp.src '../src/images/*'
     .pipe gulp.dest '../dst/assets/images'
 
+gulp.task 'copy:cname', ->
+  gulp.src '../src/CNAME'
+    .pipe gulp.dest '../dst/'
+
 gulp.task 'copy', ->
-  runSequence ['copy:libcss', 'copy:libfont', 'copy:image']
+  runSequence ['copy:libcss', 'copy:libfont', 'copy:image', 'copy:cname']
